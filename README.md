@@ -105,7 +105,7 @@ node cli.js --comments ../examples/sample-data/comments.json --likes ../examples
 --------------------------------------------------------------------------------------------------------------------------------------
 
 
-Absolutely! Here's a **clear, step-by-step guide** you can add to your `README.md` under a section like:
+Here's a **clear, step-by-step guide**
 
 ---
 
