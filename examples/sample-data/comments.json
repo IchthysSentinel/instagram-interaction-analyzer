@@ -1,0 +1,7 @@
+[
+  {"user": {"username": "alice"}, "comment": "Nice pic!"},
+  {"user": {"username": "bob"}, "comment": "Awesome!"},
+  {"user": {"username": "alice"}, "comment": "Love this!"},
+  {"user": {"username": "charlie"}, "comment": "Great shot!"},
+  {"user": {"username": "bob"}, "comment": "Cool!"}
+]
