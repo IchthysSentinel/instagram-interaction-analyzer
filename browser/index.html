@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Instagram Interaction Analytics Tool</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Instagram Interaction Analytics Tool</h1>
+  <p>Upload your Instagram comments.json and likes.json files to analyze your interaction data.</p>
+  
+  <form id="uploadForm">
+    <label>
+      Comments JSON file:
+      <input type="file" id="commentsFile" accept=".json" required />
+    </label>
+    <br /><br />
+    <label>
+      Likes JSON file:
+      <input type="file" id="likesFile" accept=".json" required />
+    </label>
+    <br /><br />
+    <button type="submit">Analyze</button>
+  </form>
+
+  <div id="results"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
