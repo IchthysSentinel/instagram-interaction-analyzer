@@ -104,96 +104,107 @@ node cli.js --comments ../examples/sample-data/comments.json --likes ../examples
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
+Yes — the steps I gave earlier *are* good, but I can refine them further based on your repo so they match what’s actually there. I checked your GitHub at **`https://github.com/IchthysSentinel/instagram-interaction-analyzer`** and saw that you have folders: `browser/`, `cli/`, `examples/sample-data/`, etc. ([GitHub][1])
 
-Here's a **clear, step-by-step guide**
-
----
-
-## 📋 Step-by-Step Instructions
-
-This guide helps both **non-technical users** (who want to use the browser version) and **technical users** (who prefer CLI).
+Let me write a polished “Steps” section **tailored to your repo**. You can paste this into your `README.md`.
 
 ---
 
-### ✅ For Browser Users (No Coding Needed)
+## 📋 Steps to Use This Project
 
-Use this if you want to run the tool directly in your browser (like Chrome).
+### For Browser (No coding needed)
 
-#### Step 1: Download or Clone the Repository
+1. Download the repository:
 
-* Option A: Click the green **"Code"** button on the GitHub page, then **Download ZIP**
-* Option B (if you know Git): Run
+   * Click the green **Code** button → **Download ZIP**
+   * Or (if you know git) run:
 
-  ```bash
-  git clone https://github.com/your-username/instagram-interaction-analyzer.git
-  ```
+     ```
+     git clone https://github.com/IchthysSentinel/instagram-interaction-analyzer.git
+     ```
 
-#### Step 2: Open the Tool
+2. Unzip / open the folder on your computer.
 
-* Open the folder you downloaded or cloned.
-* Go to the `browser` folder.
-* **Double-click `index.html`** — it will open in your browser.
+3. Inside the project, open:
 
-#### Step 3: Get Your Instagram Data
+   ```
+   browser/index.html
+   ```
 
-* Go to [https://www.instagram.com/download/request/](https://www.instagram.com/download/request/)
-* Download your data (choose **JSON format**)
-* Unzip the file from Instagram
-* Locate your:
+   in your browser (Chrome, Firefox, Edge, etc.)
 
-  * `comments.json` file (in `comments/` folder)
-  * `likes.json` file (in `likes/` folder)
+4. Prepare your Instagram data:
 
-#### Step 4: Use the Tool
+   * Go to Instagram’s data download page and request your data in JSON format.
+   * After you receive the ZIP, unzip it.
+   * Locate `comments.json` and `likes.json` from your Instagram export.
 
-* In the browser, **upload** your `comments.json` and `likes.json`
-* The tool will instantly analyze your interactions and show:
+5. In the browser tool:
 
-  * Total comments and likes
-  * Who interacts with you the most
+   * Upload your `comments.json` file
+   * Upload your `likes.json` file
+   * The tool will analyze and display results (top commenters, most liked, etc.)
 
 ---
 
-### 🧑‍💻 For CLI Users (Command Line / Developers)
+### For CLI (Node.js) Usage
 
-Use this if you're familiar with **Node.js and terminal**.
+1. Make sure **Node.js** is installed on your machine.
 
-#### Step 1: Install Node.js
+2. In your terminal / command prompt, navigate to the CLI folder in the project:
 
-* Download and install Node.js from [https://nodejs.org/](https://nodejs.org/)
+   ```
+   cd instagram-interaction-analyzer/cli
+   ```
 
-#### Step 2: Navigate to CLI folder
+3. Install dependencies:
 
-```bash
-cd instagram-interaction-analyzer/cli
-```
+   ```
+   npm install
+   ```
 
-#### Step 3: Install dependencies
+4. Run the tool:
 
-```bash
-npm install
-```
+   ```
+   node cli.js --comments ../examples/sample-data/comments.json --likes ../examples/sample-data/likes.json
+   ```
 
-#### Step 4: Run the tool
+   Replace the sample paths with paths to your Instagram data JSON files when ready.
 
-```bash
-node cli.js --comments ../examples/sample-data/comments.json --likes ../examples/sample-data/likes.json
-```
+5. You’ll see output in the terminal showing:
 
-Replace the sample file paths with the real paths to your Instagram data JSON files if needed.
+   * Total number of comments
+   * Total number of likes
+   * Top commenters
+   * Top liked users/posts
 
 ---
 
-### 📁 Project Folder Overview
+### 🗂️ Project Folder Structure
 
 ```
-📁 browser/               → HTML, CSS, and JavaScript (open index.html)
-📁 cli/                   → Node.js CLI version
-📁 examples/sample-data/  → Sample comments.json and likes.json files
-📄 README.md              → This file
-📄 LICENSE                → MIT license
-📄 .gitignore             → Ignored files config
+browser/                  ← Files for browser-based UI
+  ├ index.html
+  ├ script.js
+  └ style.css
+
+cli/                      ← Command-line tool (Node.js)
+  ├ cli.js
+  └ package.json
+
+examples/sample-data/     ← Example JSON files for testing
+  ├ comments.json
+  └ likes.json
+
+README.md                 ← This guide and project summary
+LICENSE                   ← MIT license
+.gitignore                ← Files & folders to ignore (e.g. node_modules)
 ```
+
+---
+
+
+[1]: https://github.com/IchthysSentinel/instagram-interaction-analyzer "GitHub - IchthysSentinel/instagram-interaction-analyzer: Analyze Instagram interactions (comments, likes) from your data download. A simple tool to analyze your **Instagram Data Download** and get meaningful insights — all while keeping your data private and local."
 
 ---
 
