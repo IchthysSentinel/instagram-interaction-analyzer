@@ -104,9 +104,6 @@ node cli.js --comments ../examples/sample-data/comments.json --likes ../examples
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-Yes — the steps I gave earlier *are* good, but I can refine them further based on your repo so they match what’s actually there. I checked your GitHub at **`https://github.com/IchthysSentinel/instagram-interaction-analyzer`** and saw that you have folders: `browser/`, `cli/`, `examples/sample-data/`, etc. ([GitHub][1])
-
-Let me write a polished “Steps” section **tailored to your repo**. You can paste this into your `README.md`.
 
 ---
 
