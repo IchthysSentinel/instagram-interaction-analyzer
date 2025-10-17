@@ -1,0 +1,17 @@
+{
+  "name": "instagram-interaction-analyzer-cli",
+  "version": "1.0.0",
+  "description": "CLI tool to analyze Instagram comments and likes data",
+  "main": "cli.js",
+  "bin": {
+    "insta-analyze": "cli.js"
+  },
+  "scripts": {
+    "start": "node cli.js"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
